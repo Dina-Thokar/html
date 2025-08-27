@@ -1,0 +1,430 @@
+:root {
+    --primary-red: #FF4500;
+    --dark-gray: #333;
+    --light-gray: #f9f9f9;
+    --medium-gray: #777;
+    --text-color: #444;
+    --white: #fff;
+    --border-color: #eee;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--white);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Section */
+.hero-section {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: var(--white);
+}
+
+.premium-tag {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--primary-red);
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.premium-tag i {
+    margin-right: 8px;
+    font-size: 1.1em;
+}
+
+.hero-section h1 {
+    font-size: 3.5em;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-section h1 span {
+    color: var(--primary-red);
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    color: var(--medium-gray);
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.8;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary {
+    background-color: var(--primary-red);
+    color: var(--white);
+    border: 2px solid var(--primary-red);
+    box-shadow: 0 4px 10px rgba(255, 69, 0, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: #e63900;
+    border-color: #e63900;
+    box-shadow: 0 6px 15px rgba(255, 69, 0, 0.4);
+}
+
+.btn-secondary {
+    background-color: var(--white);
+    color: var(--dark-gray);
+    border: 2px solid var(--border-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.btn-secondary:hover {
+    border-color: var(--primary-red);
+    color: var(--primary-red);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn i {
+    margin-left: 10px;
+}
+
+/* Services Section */
+.services-section {
+    background-color: var(--light-gray);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.5em;
+    color: var(--dark-gray);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.services-section > p {
+    font-size: 1.1em;
+    color: var(--medium-gray);
+    margin-bottom: 60px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 69, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card-icon i {
+    color: var(--primary-red);
+    font-size: 2.2em;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    color: var(--dark-gray);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.card > p {
+    color: var(--medium-gray);
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+    color: var(--medium-gray);
+    display: flex;
+    align-items: center;
+}
+
+.card ul li i {
+    color: var(--primary-red);
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+
+.card .price {
+    font-size: 1.8em;
+    color: var(--dark-gray);
+    font-weight: 700;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.card .price span {
+    font-size: 0.6em;
+    font-weight: 400;
+    color: var(--medium-gray);
+}
+
+.card .btn-choose-plan {
+    background-color: var(--white);
+    color: var(--primary-red);
+    border: 2px solid var(--primary-red);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card .btn-choose-plan:hover {
+    background-color: var(--primary-red);
+    color: var(--white);
+    box-shadow: 0 4px 10px rgba(255, 69, 0, 0.3);
+}
+
+.card .btn-choose-plan.primary {
+    background-color: var(--primary-red);
+    color: var(--white);
+    box-shadow: 0 4px 10px rgba(255, 69, 0, 0.3);
+    border-color: var(--primary-red);
+}
+.card .btn-choose-plan.primary:hover {
+    background-color: #e63900;
+    border-color: #e63900;
+    box-shadow: 0 6px 15px rgba(255, 69, 0, 0.4);
+}
+
+/* Stats Section */
+.stats-section {
+    background-color: var(--white);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.stat-item {
+    flex-basis: 200px;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 3em;
+    color: var(--primary-red);
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.stat-item p {
+    font-size: 1.1em;
+    color: var(--medium-gray);
+    font-weight: 500;
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: var(--primary-red);
+    color: var(--white);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.cta-section p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.8;
+}
+
+.cta-section .btn-cta {
+    background-color: var(--white);
+    color: var(--primary-red);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.cta-section .btn-cta:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.cta-section .btn-cta i {
+    margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .hero-section h1 {
+        font-size: 2.8em;
+    }
+    .services-section h2, .cta-section h2 {
+        font-size: 2em;
+    }
+    .stat-item h3 {
+        font-size: 2.5em;
+    }
+    .service-cards {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 80px 15px;
+    }
+    .hero-section h1 {
+        font-size: 2.2em;
+    }
+    .hero-section p {
+        font-size: 1em;
+    }
+    .button-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .services-section, .stats-section, .cta-section {
+        padding: 60px 15px;
+    }
+    .services-section h2, .cta-section h2 {
+        font-size: 1.8em;
+    }
+    .services-section > p, .cta-section p {
+        font-size: 0.95em;
+    }
+    .stat-item {
+        flex-basis: 45%;
+    }
+    .stat-item h3 {
+        font-size: 2.2em;
+    }
+    .stat-item p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 60px 10px;
+    }
+    .hero-section h1 {
+        font-size: 1.8em;
+    }
+    .premium-tag {
+        font-size: 0.8em;
+        padding: 3px 10px;
+    }
+    .btn {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+    .services-section, .stats-section, .cta-section {
+        padding: 40px 10px;
+    }
+    .services-section h2, .cta-section h2 {
+        font-size: 1.6em;
+    }
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+    .card {
+        padding: 25px;
+    }
+    .card h3 {
+        font-size: 1.3em;
+    }
+    .card .price {
+        font-size: 1.5em;
+    }
+    .stat-item {
+        flex-basis: 100%;
+    }
+    .stat-item h3 {
+        font-size: 2em;
+    }
+}
